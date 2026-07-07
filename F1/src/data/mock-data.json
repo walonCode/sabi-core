@@ -1,0 +1,405 @@
+{
+  "research": [
+    {
+      "id": "1",
+      "title": "Educational Technology: New Perspectives",
+      "authors": "Conteh, S.",
+      "year": 2015,
+      "abstract": "This study examines educational technology through computational simulation. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "2",
+      "title": "Blockchain Security: A Comparative Study",
+      "authors": "Conteh, F.; Garcia, A.; Alvarez, T.",
+      "year": 2025,
+      "abstract": "This study examines blockchain security through a Delphi expert panel. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results challenge conventional assumptions in the field. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "3",
+      "title": "Climate Change Adaptation: New Perspectives",
+      "authors": "Smith, T.; Garcia, M.; Johnson, P.; Kim, T.",
+      "year": 2025,
+      "abstract": "This study examines climate change adaptation through a qualitative case study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "4",
+      "title": "Microplastics Pollution: Evidence from Recent Data",
+      "authors": "Chen, J.; Johnson, M.; Alvarez, F.",
+      "year": 2016,
+      "abstract": "This study examines microplastics pollution through a mixed-methods approach. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, no statistically significant effect was observed. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "5",
+      "title": "Public Health Policy: A Comparative Study",
+      "authors": "Nguyen, B.; Chen, A.; Muller, L.; Alvarez, A.",
+      "year": 2015,
+      "abstract": "This study examines public health policy through a systematic literature review. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "6",
+      "title": "Cognitive Behavioral Therapy: A Critical Review",
+      "authors": "Rodriguez, M.",
+      "year": 2019,
+      "abstract": "This study examines cognitive behavioral therapy through a qualitative case study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the data reveal inconsistencies with prior theoretical models. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "7",
+      "title": "Mental Health in Adolescents: New Perspectives",
+      "authors": "Smith, M.",
+      "year": 2017,
+      "abstract": "This study examines mental health in adolescents through a randomized controlled trial. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results challenge conventional assumptions in the field. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "8",
+      "title": "Vaccine Hesitancy: Emerging Trends and Challenges",
+      "authors": "Alvarez, F.",
+      "year": 2017,
+      "abstract": "This study examines vaccine hesitancy through a systematic literature review. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, no statistically significant effect was observed. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "9",
+      "title": "Cognitive Behavioral Therapy: An Empirical Analysis",
+      "authors": "Bangura, S.",
+      "year": 2023,
+      "abstract": "This study examines cognitive behavioral therapy through computational simulation. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the study identifies several gaps requiring further investigation. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "10",
+      "title": "Mental Health in Adolescents: A Critical Review",
+      "authors": "Garcia, E.; Okafor, L.; Kim, L.; Conteh, S.",
+      "year": 2024,
+      "abstract": "This study examines mental health in adolescents through a randomized controlled trial. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the data reveal inconsistencies with prior theoretical models. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "11",
+      "title": "Sustainable Supply Chains: A Comparative Study",
+      "authors": "Alvarez, F.; Sesay, N.; Kim, A.; Sesay, J.",
+      "year": 2025,
+      "abstract": "This study examines sustainable supply chains through a Delphi expert panel. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the study identifies several gaps requiring further investigation. Implications for practice and future research directions are discussed.",
+      "status": "discussion"
+    },
+    {
+      "id": "12",
+      "title": "Vaccine Hesitancy: Evidence from Recent Data",
+      "authors": "Muller, K.",
+      "year": 2014,
+      "abstract": "This study examines vaccine hesitancy through a qualitative case study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, findings suggest limited generalizability across different populations. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "13",
+      "title": "Wireless Sensor Networks: Emerging Trends and Challenges",
+      "authors": "Turay, L.; Alvarez, E.; Okafor, M.",
+      "year": 2023,
+      "abstract": "This study examines wireless sensor networks through a mixed-methods approach. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the study identifies several gaps requiring further investigation. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "14",
+      "title": "Soil Carbon Sequestration: Emerging Trends and Challenges",
+      "authors": "Garcia, R.; Johnson, F.; Mansaray, T.",
+      "year": 2017,
+      "abstract": "This study examines soil carbon sequestration through a longitudinal cohort study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, no statistically significant effect was observed. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "15",
+      "title": "Sustainable Supply Chains: A Comparative Study",
+      "authors": "Alvarez, N.; Muller, D.",
+      "year": 2016,
+      "abstract": "This study examines sustainable supply chains through a longitudinal cohort study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, no statistically significant effect was observed. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "16",
+      "title": "Soil Carbon Sequestration: A Comparative Study",
+      "authors": "Mansaray, S.; Turay, L.; Garcia, P.; Bangura, E.",
+      "year": 2025,
+      "abstract": "This study examines soil carbon sequestration through a randomized controlled trial. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, no statistically significant effect was observed. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "17",
+      "title": "Vaccine Hesitancy: An Empirical Analysis",
+      "authors": "Mansaray, M.; Sesay, T.; Mansaray, K.; Garcia, C.",
+      "year": 2018,
+      "abstract": "This study examines vaccine hesitancy through an experimental design. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, findings suggest limited generalizability across different populations. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "18",
+      "title": "Machine Learning: Emerging Trends and Challenges",
+      "authors": "Kamara, S.; Garcia, E.; Alvarez, C.",
+      "year": 2025,
+      "abstract": "This study examines machine learning through a longitudinal cohort study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "19",
+      "title": "Machine Learning: Evidence from Recent Data",
+      "authors": "Alvarez, D.; Nguyen, M.; Smith, D.; Kamara, M.",
+      "year": 2016,
+      "abstract": "This study examines machine learning through a systematic literature review. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results indicate a significant correlation between the variables studied. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "20",
+      "title": "Machine Learning: A Critical Review",
+      "authors": "Kim, R.; Smith, R.; Rodriguez, J.; Conteh, E.",
+      "year": 2017,
+      "abstract": "This study examines machine learning through a Delphi expert panel. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the study identifies several gaps requiring further investigation. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "21",
+      "title": "Remote Work Productivity: A Comparative Study",
+      "authors": "Nguyen, B.; Kamara, M.; Conteh, E.; Garcia, D.",
+      "year": 2020,
+      "abstract": "This study examines remote work productivity through meta-analysis of existing datasets. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, findings suggest limited generalizability across different populations. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "22",
+      "title": "Financial Risk Modeling: Evidence from Recent Data",
+      "authors": "Chen, S.; Conteh, E.; Nguyen, P.; Mansaray, P.",
+      "year": 2022,
+      "abstract": "This study examines financial risk modeling through a mixed-methods approach. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the study identifies several gaps requiring further investigation. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "23",
+      "title": "Digital Privacy Law: A Comparative Study",
+      "authors": "Smith, L.",
+      "year": 2025,
+      "abstract": "This study examines digital privacy law through a longitudinal cohort study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "24",
+      "title": "Genomic Sequencing: An Empirical Analysis",
+      "authors": "Turay, B.",
+      "year": 2025,
+      "abstract": "This study examines genomic sequencing through a Delphi expert panel. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results indicate a significant correlation between the variables studied. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "25",
+      "title": "Autonomous Vehicle Ethics: A Comparative Study",
+      "authors": "Sesay, C.; Bangura, A.; Kim, T.; Nguyen, S.",
+      "year": 2019,
+      "abstract": "This study examines autonomous vehicle ethics through a Delphi expert panel. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "26",
+      "title": "Machine Learning: A Comparative Study",
+      "authors": "Sesay, R.; Kim, R.",
+      "year": 2015,
+      "abstract": "This study examines machine learning through a cross-sectional survey. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the study identifies several gaps requiring further investigation. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "27",
+      "title": "Cognitive Behavioral Therapy: A Critical Review",
+      "authors": "Mansaray, E.",
+      "year": 2023,
+      "abstract": "This study examines cognitive behavioral therapy through a systematic literature review. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the study identifies several gaps requiring further investigation. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "28",
+      "title": "Neural Network Optimization: An Empirical Analysis",
+      "authors": "Smith, S.; Okafor, M.",
+      "year": 2021,
+      "abstract": "This study examines neural network optimization through an experimental design. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results indicate a significant correlation between the variables studied. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "29",
+      "title": "Neural Network Optimization: An Empirical Analysis",
+      "authors": "Mansaray, B.; Rodriguez, A.",
+      "year": 2024,
+      "abstract": "This study examines neural network optimization through meta-analysis of existing datasets. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results indicate a significant correlation between the variables studied. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "30",
+      "title": "Remote Work Productivity: A Comparative Study",
+      "authors": "Muller, P.; Conteh, R.; Mansaray, D.; Rodriguez, E.",
+      "year": 2023,
+      "abstract": "This study examines remote work productivity through a qualitative case study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "31",
+      "title": "Blockchain Security: A Critical Review",
+      "authors": "Garcia, N.; Conteh, N.; Kamara, J.; Turay, D.",
+      "year": 2016,
+      "abstract": "This study examines blockchain security through a mixed-methods approach. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "32",
+      "title": "Financial Risk Modeling: Evidence from Recent Data",
+      "authors": "Bangura, R.; Garcia, N.",
+      "year": 2020,
+      "abstract": "This study examines financial risk modeling through a randomized controlled trial. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "33",
+      "title": "Autonomous Vehicle Ethics: Evidence from Recent Data",
+      "authors": "Muller, L.; Bangura, A.; Turay, K.",
+      "year": 2014,
+      "abstract": "This study examines autonomous vehicle ethics through computational simulation. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, no statistically significant effect was observed. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "34",
+      "title": "Remote Work Productivity: An Empirical Analysis",
+      "authors": "Smith, T.",
+      "year": 2023,
+      "abstract": "This study examines remote work productivity through meta-analysis of existing datasets. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "35",
+      "title": "Remote Work Productivity: An Empirical Analysis",
+      "authors": "Mansaray, D.",
+      "year": 2017,
+      "abstract": "This study examines remote work productivity through a systematic literature review. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results indicate a significant correlation between the variables studied. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "36",
+      "title": "Public Health Policy: Evidence from Recent Data",
+      "authors": "Muller, T.; Conteh, P.; Turay, E.; Smith, B.",
+      "year": 2019,
+      "abstract": "This study examines public health policy through a longitudinal cohort study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "37",
+      "title": "Urban Agriculture: Evidence from Recent Data",
+      "authors": "Alvarez, J.; Johnson, N.; Rodriguez, D.",
+      "year": 2025,
+      "abstract": "This study examines urban agriculture through a Delphi expert panel. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the data reveal inconsistencies with prior theoretical models. Implications for practice and future research directions are discussed.",
+      "status": "discussion"
+    },
+    {
+      "id": "38",
+      "title": "Financial Risk Modeling: Emerging Trends and Challenges",
+      "authors": "Nguyen, P.",
+      "year": 2016,
+      "abstract": "This study examines financial risk modeling through a longitudinal cohort study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results indicate a significant correlation between the variables studied. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "39",
+      "title": "Mental Health in Adolescents: Emerging Trends and Challenges",
+      "authors": "Kim, E.; Turay, P.; Johnson, J.; Garcia, D.",
+      "year": 2023,
+      "abstract": "This study examines mental health in adolescents through an experimental design. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "40",
+      "title": "Autonomous Vehicle Ethics: An Empirical Analysis",
+      "authors": "Muller, P.; Alvarez, N.; Muller, D.; Garcia, R.",
+      "year": 2025,
+      "abstract": "This study examines autonomous vehicle ethics through an experimental design. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "41",
+      "title": "Blockchain Security: A Comparative Study",
+      "authors": "Mansaray, R.; Kim, F.; Rodriguez, D.",
+      "year": 2017,
+      "abstract": "This study examines blockchain security through computational simulation. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "42",
+      "title": "Financial Risk Modeling: An Empirical Analysis",
+      "authors": "Nguyen, D.",
+      "year": 2020,
+      "abstract": "This study examines financial risk modeling through a mixed-methods approach. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "43",
+      "title": "Microplastics Pollution: New Perspectives",
+      "authors": "Rodriguez, K.; Nguyen, B.; Garcia, K.",
+      "year": 2022,
+      "abstract": "This study examines microplastics pollution through a randomized controlled trial. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "44",
+      "title": "Digital Privacy Law: A Critical Review",
+      "authors": "Smith, R.; Mansaray, S.",
+      "year": 2022,
+      "abstract": "This study examines digital privacy law through a qualitative case study. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, findings suggest limited generalizability across different populations. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "45",
+      "title": "Neural Network Optimization: A Comparative Study",
+      "authors": "Garcia, T.",
+      "year": 2025,
+      "abstract": "This study examines neural network optimization through an experimental design. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, no statistically significant effect was observed. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "46",
+      "title": "Public Health Policy: An Empirical Analysis",
+      "authors": "Rodriguez, M.; Kamara, R.; Turay, N.",
+      "year": 2023,
+      "abstract": "This study examines public health policy through a systematic literature review. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, the analysis confirms the reliability of the measurement instrument used. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "47",
+      "title": "Vaccine Hesitancy: Emerging Trends and Challenges",
+      "authors": "Okafor, J.",
+      "year": 2025,
+      "abstract": "This study examines vaccine hesitancy through an experimental design. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results indicate a significant correlation between the variables studied. Implications for practice and future research directions are discussed.",
+      "status": "exclude"
+    },
+    {
+      "id": "48",
+      "title": "Cognitive Behavioral Therapy: A Comparative Study",
+      "authors": "Rodriguez, C.; Chen, N.",
+      "year": 2022,
+      "abstract": "This study examines cognitive behavioral therapy through a randomized controlled trial. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, results challenge conventional assumptions in the field. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    },
+    {
+      "id": "49",
+      "title": "Financial Risk Modeling: A Comparative Study",
+      "authors": "Kamara, F.; Muller, M.; Bangura, P.; Sesay, N.",
+      "year": 2025,
+      "abstract": "This study examines financial risk modeling through computational simulation. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, no statistically significant effect was observed. Implications for practice and future research directions are discussed.",
+      "status": "include"
+    },
+    {
+      "id": "50",
+      "title": "Genomic Sequencing: New Perspectives",
+      "authors": "Garcia, P.",
+      "year": 2025,
+      "abstract": "This study examines genomic sequencing through an experimental design. The research addresses a gap in current understanding by analyzing relevant data collected across multiple sources. Overall, outcomes support the adoption of the proposed framework. Implications for practice and future research directions are discussed.",
+      "status": "undecided"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
