@@ -1,0 +1,17 @@
+{
+  "name": "b1",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "types/express"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.2.0"
+  }
+}
