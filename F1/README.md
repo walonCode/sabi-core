@@ -1,77 +1,135 @@
-# React + TypeScript + Vite
+# Study Review
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A keyboard-first screening tool for systematic literature reviews. A reviewer scrolls through a set of
+research studies, reads each abstract, and triages it as **Include**, **Exclude**, or **flag for
+Discussion** — without ever needing the mouse. Every decision is saved to a backend, so it survives a
+page refresh.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Lists 50 research studies (title, authors, year, abstract) with a color-coded decision status.
+- Lets a reviewer mark each study **Include** / **Exclude** / **Discuss**, or reset it to **Undecided**.
+- **Persists decisions** across refreshes by writing them to a REST backend (not `localStorage`).
+- **Filters** by decision (All / Undecided / Included / Excluded / Discuss) with live counts. While
+  triaging the *Undecided* queue, deciding a study auto-advances to the next one.
+- Shows a **progress spine** in the header — one tick per study, colored by decision — for an at-a-glance
+  overview of how much of the review is done.
 
-## React Compiler
+### Keyboard shortcuts
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The whole review can be driven from the keyboard:
 
-Note: This will impact Vite dev & build performances.
+| Key | Action |
+| --- | --- |
+| `↑` / `↓` (or `k` / `j`) | Move between studies |
+| `Home` / `End` | Jump to first / last study |
+| `i` | Mark **Include** |
+| `e` | Mark **Exclude** |
+| `d` | Flag for **Discuss** |
+| `u` | Reset to **Undecided** |
 
-## Expanding the ESLint configuration
+The first navigation key focuses the current study; after that the selection follows focus, scrolls into
+view, and every decision is announced to screen readers via an `aria-live` region.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## How it works
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend:** React 19 + TypeScript, built with Vite. The entire UI lives in
+  [`src/App.tsx`](./src/App.tsx). Styling is [Tailwind CSS v4](https://tailwindcss.com/) (configured in
+  [`src/index.css`](./src/index.css)) with a serif display face for study titles and a sans body face.
+- **Data / persistence:** [`json-server`](https://github.com/typicode/json-server) serves
+  [`src/data/mock-data.json`](./src/data/mock-data.json) as a mock REST API. The `research` array becomes
+  the `http://localhost:3000/research` endpoint.
+- **Reads:** on load the app does `GET /research` (via `axios`).
+- **Writes:** marking a study does an **optimistic** update in the UI, then `PATCH /research/:id` with the
+  new `status`. If the request fails, the change is rolled back and an error is shown. json-server writes
+  the change back to `mock-data.json`, so it persists.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+> Note: json-server stores ids as strings once a record is written, so the app normalizes ids to numbers
+> on load to keep comparisons and PATCH URLs consistent.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Setup (local)
 
+**Prerequisites:** Node 18+ and a package manager (this repo uses [Bun](https://bun.sh); npm works too).
+
+```bash
+# from the F1/ directory
+bun install          # or: npm install
+
+# start the API (json-server on :3000) and the Vite dev server together
+bun run dev          # or: npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Then open the Vite URL it prints (default http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Script | What it does |
+| --- | --- |
+| `dev` | Runs json-server (`:3000`) **and** Vite together; `Ctrl+C` stops both |
+| `server` | Runs only the json-server API on `:3000` |
+| `app` | Runs only the Vite dev server |
+| `build` | Type-checks (`tsc -b`) and builds for production |
+| `lint` | Runs ESLint |
+| `preview` | Serves the production build locally |
 
+If study decisions ever stop saving, make sure the API on `:3000` is running (`bun run server`).
+
+## Recommendations / next steps
+
+json-server is great for a demo, but it reads and writes a single JSON file — no real concurrency, no
+validation, no auth, and it doesn't scale. To take this toward production:
+
+### 1. A real database — Neon + Drizzle
+
+Swap the JSON file for a managed Postgres database like [Neon](https://neon.tech) and access it with
+[Drizzle ORM](https://orm.drizzle.team) for type-safe queries and migrations.
+
+```ts
+// db/schema.ts
+import { pgTable, serial, text, integer, pgEnum } from "drizzle-orm/pg-core";
+
+export const statusEnum = pgEnum("status", ["include", "exclude", "discussion", "undecided"]);
+
+export const research = pgTable("research", {
+  id: serial("id").primaryKey(),
+  title: text("title").notNull(),
+  authors: text("authors").notNull(),
+  year: integer("year").notNull(),
+  abstract: text("abstract").notNull(),
+  status: statusEnum("status").notNull().default("undecided"),
+});
 ```
+
+Drizzle Kit generates and applies migrations (`drizzle-kit generate` / `migrate`), and Neon gives you a
+serverless Postgres connection string you can drop straight into `DATABASE_URL`.
+
+### 2. A proper API server (with `POST` to submit research)
+
+Put a small API server (e.g. [Hono](https://hono.dev), Express, or Fastify) in front of the database so
+the client talks to real endpoints instead of json-server:
+
+| Method | Route | Purpose |
+| --- | --- | --- |
+| `GET` | `/research` | List studies |
+| `POST` | `/research` | **Submit a new study** (validated title, authors, year, abstract) |
+| `PATCH` | `/research/:id` | Update a study's decision status |
+
+```ts
+// example: Hono + Drizzle + Zod validation
+app.post("/research", async (c) => {
+  const body = await c.req.json();
+  const parsed = studySchema.parse(body);            // validate with Zod
+  const [created] = await db.insert(research).values(parsed).returning();
+  return c.json(created, 201);
+});
+```
+
+With that in place, the frontend keeps the same `GET`/`PATCH` calls (just repoint the base URL) and gains
+a submission form that `POST`s new research into the review queue.
+
+### Other worthwhile additions
+
+- **Validation** on the server with [Zod](https://zod.dev), sharing types with the frontend.
+- **Auth + per-reviewer decisions** so two reviewers can screen independently and disagreements surface.
+- **Notes per study** and an audit trail of who decided what and when.
+- **Tests** for the decision/keyboard logic (Vitest + Testing Library) and API routes.
