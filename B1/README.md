@@ -45,10 +45,15 @@ bun install
 
 **2. Set environment variables**
 
-Create a `.env` file in the project root. Bun loads it automatically, so you do not need `dotenv`.
+Copy the example file and fill in your database connection string. Bun loads `.env` automatically, so you do
+not need `dotenv`.
 
 ```bash
-PORT=5000
+cp .env.example .env
+```
+
+```bash
+PORT=4000
 DATABASE_URL="postgresql://user:password@host/dbname"
 ```
 
@@ -65,8 +70,8 @@ bun run db:generate     # generate the Prisma client
 bun run dev
 ```
 
-The server starts on the port from `.env` (default http://localhost:5000). You can then send PDF files to
-`POST /ingest` as multipart form data.
+The server starts on the port from `.env` (http://localhost:4000 in the example). You can then send PDF
+files to `POST /ingest` as multipart form data.
 
 ### Scripts
 
