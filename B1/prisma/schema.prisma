@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+
+ //title, abstract, authors, and year
+model File {
+  id    Int     @id @default(autoincrement())
+  title String
+  abstract String
+  author String
+  year Int
+  hash String @unique
+}
