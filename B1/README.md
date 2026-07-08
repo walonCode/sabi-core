@@ -72,7 +72,8 @@ The server starts on the port from `.env` (default http://localhost:5000). You c
 
 | Script | What it does |
 | --- | --- |
-| `dev` | Runs the server with `bun --watch` and reloads on changes |
+| `dev` | Runs the server |
+| `test` | Runs the test suite with `bun test` |
 | `db:migrate` | Creates and applies database migrations with Prisma |
 | `db:generate` | Regenerates the Prisma client from the schema |
 | `db:studio` | Opens Prisma Studio to browse the database |
@@ -100,5 +101,3 @@ and you can regenerate or improve the extracted fields at any time without askin
 ### Other worthwhile additions
 
 - Validate the incoming data before saving, so empty or clearly wrong fields are rejected.
-- Extract and store the DOI when present, since it is the most reliable way to identify a paper.
-- Add tests for the upload flow and the duplicate handling.
