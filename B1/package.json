@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "bun app.ts",
+    "test": "bun test",
     "db:migrate": "bunx --bun prisma migrate dev",
     "db:generate": "bunx --bun prisma generate",
     "db:studio": "bunx --bun prisma studio"
