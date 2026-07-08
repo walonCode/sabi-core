@@ -1,13 +1,5 @@
-// Tests for the PDF metadata extractor.
-//
-// `extractAcademicSchema` is a pure function: same input always gives the same
-// output, and it touches nothing external (no database, no network, no files).
-// That makes it the easiest and most valuable thing to unit test. Each test
-// below feeds it a small `fullText` string and an `info` object (the two things
-// the real PDF parser hands over) and asserts on the returned fields.
-//
-// Run with:  bun test
 import { test, expect, describe } from "bun:test";
+
 import extractAcademicSchema from "./pdf_regex";
 
 describe("extractAcademicSchema", () => {

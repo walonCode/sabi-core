@@ -1,21 +1,3 @@
-// Tests for the ingest controller's deduplication behavior.
-//
-// The controller normally talks to a real Postgres database (through Prisma) and
-// to the PDF parsing library. We don't want the tests to need either, so we use
-// `mock.module` to swap both out before importing the controller:
-//
-//   - `../lib/db`            -> a fake Prisma backed by an in-memory Map keyed by
-//                              hash, which throws a `P2002` error on a repeat
-//                              insert, exactly like the real unique constraint.
-//   - `@cedrugs/pdf-parse`   -> a stub that returns fixed text, so no real PDF is
-//                              needed.
-//
-// The controller still computes real SHA-256 hashes from the uploaded buffers,
-// so identical buffers collide and different buffers do not, which is the whole
-// point of the dedup logic. Because the mocks must be in place before the
-// controller is loaded, we set them up first and then `await import(...)` it.
-//
-// Run with:  bun test
 import { test, expect, describe, mock, beforeEach } from "bun:test";
 
 // In-memory stand-in for the File table, keyed by the unique `hash` column.
